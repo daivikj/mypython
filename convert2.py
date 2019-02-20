@@ -4,9 +4,9 @@ def convert2(l):
         count = 0
         for j in i:
             count += 1
-            s += j
-            if count==1: s += '='
+            s += s.join(j)
+            if count==1: s += s.join('=')
         s += ';'
-    print(s)
+    return s
 
-convert2([('a','b'),('c','d'),('e','f'),('g','h')])
+print(convert2([('a','b'),('c','d'),('e','f'),('g','h')]))

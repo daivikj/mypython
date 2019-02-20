@@ -5,6 +5,6 @@ def convert(str):
     for i in lst:
         t = tuple(filter(None,i.split("=")))
         final.append(t)
-    print(final)
+    return(final)
 
-convert("a=b;c=d;e=f;g=h")
+print(convert("a=b;c=d;e=f;g=h"))
